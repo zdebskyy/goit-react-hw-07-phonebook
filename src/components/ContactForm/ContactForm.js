@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ContactForm.css";
-import InputForm from "../InputFrom/InputForm";
+import InputForm from "../InputForm/InputForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { connect } from "react-redux";
