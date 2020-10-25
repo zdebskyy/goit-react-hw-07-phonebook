@@ -1,0 +1,13 @@
+.logo {
+  color: rgb(0, 153, 255);
+  font-size: 32px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.logoIn-appear {
+  transform: translateY(-100%);
+}
+.logoIn-appear-active {
+  transform: translateY(0);
+  transition: transform 500ms linear;
+}

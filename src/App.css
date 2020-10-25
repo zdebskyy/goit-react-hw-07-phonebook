@@ -1,0 +1,21 @@
+.filterIn-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.filterIn-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 250ms linear;
+}
+
+.filterIn-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filterIn-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 250ms linear;
+}
