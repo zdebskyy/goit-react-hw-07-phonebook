@@ -4,7 +4,8 @@ import InputForm from "../InputForm/InputForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { connect } from "react-redux";
-import contactsActions from "../../redux/contacts/contactsActions";
+import contactsOperations from "../../redux/contacts/contactsOperations";
+import contactsSelectors from "../../redux/contacts/contactsSelectors";
 
 class ContactForm extends Component {
   state = {
@@ -75,9 +76,9 @@ class ContactForm extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts.items,
+    contacts: contactsSelectors.getContacts(state),
   };
 };
-const mapDispatchToProps = { onAddContact: contactsActions.addContact };
+const mapDispatchToProps = { onAddContact: contactsOperations.addContact };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
